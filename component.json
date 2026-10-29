@@ -32,5 +32,35 @@
       "app-test",
       "APP_TEST_PACKAGE=hyper-text-ui"
     ]
-  ]
+  ],
+  "cargo_context": {
+    "Cargo.toml": {
+      "workspace": null,
+      "membership": "../../app",
+      "dependency_paths": {
+        "/dependencies/hyper-terminal": "lib/terminal"
+      },
+      "inherited_dependencies": {
+        "/dependencies/hyper-os": {
+          "workspace": true
+        },
+        "/dependencies/hyper-terminal": {
+          "workspace": true
+        }
+      }
+    },
+    "shared/Cargo.toml": {
+      "workspace": null,
+      "membership": "../../../app",
+      "dependency_paths": {
+        "/dependencies/implementation": "lib/text-ui",
+        "/dependencies/hyper-rust-std": "stdlib/rust-std"
+      },
+      "inherited_dependencies": {
+        "/dependencies/hyper-rust-std": {
+          "workspace": true
+        }
+      }
+    }
+  }
 }
