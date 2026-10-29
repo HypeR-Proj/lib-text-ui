@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "name": "text-ui",
+  "kind": "library",
+  "origin": {
+    "repository": "https://github.com/roolrz/HypeR",
+    "commit": "8d42d047058a2b58a291803700e86487fb723f7a"
+  },
+  "sources": {
+    "Cargo.toml": "lib/text-ui/Cargo.toml",
+    "component.mk": "lib/text-ui/component.mk",
+    "shared/Cargo.toml": "lib/text-ui/shared/Cargo.toml",
+    "shared/src/lib.rs": "lib/text-ui/shared/src/lib.rs",
+    "src/keys.rs": "lib/text-ui/src/keys.rs",
+    "src/lib.rs": "lib/text-ui/src/lib.rs",
+    "src/screen.rs": "lib/text-ui/src/screen.rs",
+    "src/session.rs": "lib/text-ui/src/session.rs",
+    "tests/keys-display.rs": "lib/text-ui/tests/keys-display.rs"
+  },
+  "SPDX-FileCopyrightText": "2026 roolrz",
+  "SPDX-License-Identifier": "Apache-2.0",
+  "mounts": {
+    "": "lib/text-ui"
+  },
+  "packages": [
+    "hyper-text-ui",
+    "hyper-text-ui-shared"
+  ],
+  "tests": [
+    [
+      "make",
+      "app-test",
+      "APP_TEST_PACKAGE=hyper-text-ui"
+    ]
+  ]
+}
