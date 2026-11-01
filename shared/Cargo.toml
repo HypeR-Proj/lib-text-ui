@@ -4,12 +4,12 @@
 
 [package]
 name = "hyper-text-ui-shared"
-version = "0.0.0"
+version = "0.1.0"
 edition = "2024"
 license = "Apache-2.0"
 repository = "https://github.com/HypeR-Proj/lib-text-ui"
 publish = false
-workspace = "../../../app"
+workspace = ".."
 
 [lib]
 crate-type = ["dylib"]
@@ -24,7 +24,8 @@ package = "hyper-text-ui"
 path = ".."
 
 [dependencies.hyper-rust-std]
-workspace = true
+path = "../../../stdlib/rust-std"
+default-features = false
 
 [lints]
 
