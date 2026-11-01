@@ -11,7 +11,7 @@ repository = "https://github.com/HypeR-Proj/lib-text-ui"
 publish = false
 
 [dependencies]
-unicode-width = "=0.2.2"
+unicode-width = "0.2"
 
 [dependencies.hyper-os]
 version = "=0.0.0"
